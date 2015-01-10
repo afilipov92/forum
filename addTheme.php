@@ -1,4 +1,5 @@
 <?php
+
 require_once('inc/inc.php');
 
 if(Utility::isUser()){

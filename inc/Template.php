@@ -59,6 +59,10 @@ class Template{
     public function setListCat($tpl, array $data){
         foreach($data as $a){
             $this->myList .= Template::processTemplace($tpl,$a);
+            $this->myList = Template::processTemplace($this->myList, array(
+                   'URL' => Utility::getUrl('./cat.php', array(
+                        'id_cat' => $a['id']
+                    ))));
         }
     }
 

@@ -2,6 +2,7 @@
 
 require_once('inc/inc.php');
 
+
 $pageTpl = Template::getTemplate('index');
 $catTpl = Template::getTemplate('cat');
 $msg = "";
@@ -25,4 +26,6 @@ $page = Template::processTemplace($pageTpl, array(
     'LOGIN' => $login,
 	'TITLE-CAT' => '<div class="list-name">Категории</div>'
 ));
+
 echo $page;
+

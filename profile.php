@@ -1,4 +1,5 @@
 <?php
+
 require_once('inc/inc.php');
 //Output page views user profile
 $pageTpl = Template::getTemplate('page');
@@ -36,3 +37,4 @@ $page = Template::processTemplace($pageTpl, array(
     'TPL' => '?tpl=editprofile'
 ));
 echo $page;
+
