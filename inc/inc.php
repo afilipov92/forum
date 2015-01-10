@@ -9,9 +9,9 @@ function autoload($className) {
 }
 /*
 define('DB_HOST', 'mysql.hostinger.ru');
-define('DB_USER', 'u230910915_root');
-define('DB_PASSWORD', 'Blackpearl99');
-define('DB_NAME', 'u230910915_study');*/
+define('DB_USER', '----------');
+define('DB_PASSWORD', '-----------');
+define('DB_NAME', '-----------');*/
 
 
 define('DB_HOST', 'localhost');
