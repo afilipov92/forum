@@ -8,7 +8,7 @@ $catTpl = Template::getTemplate('cat');
 $msg = "";
 
 if(Utility::isAdmin()){
-   $templ->setHtml("<form method=\"GET\" align=\"right\" action=\"addCat.php\">
+   $templ->setHtml("<form method=\"GET\" align=\"right\" action=\"".Utility::getUrl('addCat.php')."\">
                     <input type=\"submit\" name=\"submit\" value=\"Добавить категорию\"/>
                     </form>"
    );

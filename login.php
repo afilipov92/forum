@@ -24,7 +24,7 @@
           }
       }
       $str .= "
-          <form method='post' action='login.php'>$error
+          <form method='post' action='".Utility::getUrl('login.php')."'>$error
           <span class='fieldname'>Логин&nbsp;&nbsp;&nbsp;:  </span><input type='text'
           maxlength='16' name='userName' value='$user'><br>
           <span class='fieldname'>Пароль&nbsp;: </span><input type='password'

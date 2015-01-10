@@ -14,7 +14,7 @@ if($catid){
         $templ->setListTheme($themeTpl, $selectTheme);
     }
     if(Utility::isUser()){
-        $templ->setHtml("<form method=\"GET\" align=\"right\" action=\"addTheme.php\">
+        $templ->setHtml("<form method=\"GET\" align=\"right\" action=\"".Utility::getUrl('addTheme.php')."\">
                      <input type=\"hidden\" name=\"id_cat\" value=\"".$catid."\"/>
                     <input type=\"submit\" name=\"submit\" value=\"Добавить тему\"/>
                     </form>"
